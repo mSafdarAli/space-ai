@@ -1,0 +1,578 @@
+<div class="card mt-2">
+    <div class="card-body">
+        <div class="row">
+            <div class="col-md-3 col-lg-4 col-12">
+                <h4 class="font-22">Property Details</h4>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="row">
+    <div class="col-md-12 col-lg-6 col-12">
+        <div class="card mt-lg-2 mt-lg-2 mt-0">
+            <div class="card-body">
+                <div class="row">
+                    <div class="col-md-6" *ngFor="let item of data">
+                        <h4 class="mb-0 text-dark border-bottom border-light border-2 pb-1 font-20">Listing Contacts</h4>
+                        <!-- <div class="mt-1 mb-2 hr"></div> -->
+                        <div class="row mt-2">
+                            <div class="col-md-2 col-2">
+                                <img src="assets/images/anyArea.jpeg" alt="contact" class="rounded-pill" [width]="44"
+                                    [height]="46">
+                            </div>
+                            <div class="col-md-7 col-10 font-16">
+                                <p class="mb-0 text-dark fw-bold">Sean Oliver</p>
+                                <p class="mb-0 text-dark">License: NY</p>
+                                <p class="mb-0 text-dark">Phone Number: 123456</p>
+                                <a href="">View Profile</a>
+                            </div>
+                            <div class="col-md-3 text-end"><img src="assets/images/anyArea.jpeg" alt="brand"
+                                    [width]="75" [height]="44" class="d-none d-lg-block d-md-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="mb-0 text-dark border-bottom border-light border-2 pb-1 font-20">TRANSPORTATION</h4>
+
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <thead>
+                                    <tr>
+                                        <th><svg xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                                fill="currentColor" class="bi bi-bus-front text-dark"
+                                                viewBox="0 0 16 16">
+                                                <path
+                                                    d="M5 11a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm8 0a1 1 0 1 1-2 0 1 1 0 0 1 2 0Zm-6-1a1 1 0 1 0 0 2h2a1 1 0 1 0 0-2H7Zm1-6c-1.876 0-3.426.109-4.552.226A.5.5 0 0 0 3 4.723v3.554a.5.5 0 0 0 .448.497C4.574 8.891 6.124 9 8 9c1.876 0 3.426-.109 4.552-.226A.5.5 0 0 0 13 8.277V4.723a.5.5 0 0 0-.448-.497A44.303 44.303 0 0 0 8 4Zm0-1c-1.837 0-3.353.107-4.448.22a.5.5 0 1 1-.104-.994A44.304 44.304 0 0 1 8 2c1.876 0 3.426.109 4.552.226a.5.5 0 1 1-.104.994A43.306 43.306 0 0 0 8 3Z" />
+                                                <path
+                                                    d="M15 8a1 1 0 0 0 1-1V5a1 1 0 0 0-1-1V2.64c0-1.188-.845-2.232-2.064-2.372A43.61 43.61 0 0 0 8 0C5.9 0 4.208.136 3.064.268 1.845.408 1 1.452 1 2.64V4a1 1 0 0 0-1 1v2a1 1 0 0 0 1 1v3.5c0 .818.393 1.544 1 2v2a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5V14h6v1.5a.5.5 0 0 0 .5.5h2a.5.5 0 0 0 .5-.5v-2c.607-.456 1-1.182 1-2V8ZM8 1c2.056 0 3.71.134 4.822.261.676.078 1.178.66 1.178 1.379v8.86a1.5 1.5 0 0 1-1.5 1.5h-9A1.5 1.5 0 0 1 2 11.5V2.64c0-.72.502-1.301 1.178-1.379A42.611 42.611 0 0 1 8 1Z" />
+                                            </svg><span class="ms-2 text-dark fw-bold">TRANSIT/SUBWAY</span></th>
+                                    </tr>
+                                </thead>
+                                <tbody class="border-top-2 border-bottom-0 border-light">
+                                    <tr>
+                                        <th scope="row" class="font-16 text-dark fw-bold">Buckhead Transit Stop <img
+                                                src="assets/images/image.png" alt="marta" class="w-25 ms-2"> <img
+                                                src="assets/images/transline.png" alt="transline" class="ms-2"
+                                                width="30px"></th>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="mb-0 text-dark border-bottom border-light border-2 pb-1 font-20"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-airplane me-2 mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M6.428 1.151C6.708.591 7.213 0 8 0s1.292.592 1.572 1.151C9.861 1.73 10 2.431 10 3v3.691l5.17 2.585a1.5 1.5 0 0 1 .83 1.342V12a.5.5 0 0 1-.582.493l-5.507-.918-.375 2.253 1.318 1.318A.5.5 0 0 1 10.5 16h-5a.5.5 0 0 1-.354-.854l1.319-1.318-.376-2.253-5.507.918A.5.5 0 0 1 0 12v-1.382a1.5 1.5 0 0 1 .83-1.342L6 6.691V3c0-.568.14-1.271.428-1.849Zm.894.448C7.111 2.02 7 2.569 7 3v4a.5.5 0 0 1-.276.447l-5.448 2.724a.5.5 0 0 0-.276.447v.792l5.418-.903a.5.5 0 0 1 .575.41l.5 3a.5.5 0 0 1-.14.437L6.708 15h2.586l-.647-.646a.5.5 0 0 1-.14-.436l.5-3a.5.5 0 0 1 .576-.411L15 11.41v-.792a.5.5 0 0 0-.276-.447L9.276 7.447A.5.5 0 0 1 9 7V3c0-.432-.11-.979-.322-1.401C8.458 1.159 8.213 1 8 1c-.213 0-.458.158-.678.599Z" />
+                            </svg>AIRPORT</h4>
+
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr class="font-16 text-dark" *ngFor="let item of [1,2,3,4,5,6]">
+                                        <td>Hartsfield-Jackson Atlanta International Airport</td>
+                                        <td>Barbecue</td>
+                                        <td>$$</td>
+                                        <td>4 min walk</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12">
+                <div class="card">
+                    <div class="card-body">
+                        <h4 class="mb-0 text-dark border-bottom border-light border-2 pb-1 font-20"><svg
+                                xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                                class="bi bi-shop me-2 mb-1" viewBox="0 0 16 16">
+                                <path
+                                    d="M2.97 1.35A1 1 0 0 1 3.73 1h8.54a1 1 0 0 1 .76.35l2.609 3.044A1.5 1.5 0 0 1 16 5.37v.255a2.375 2.375 0 0 1-4.25 1.458A2.371 2.371 0 0 1 9.875 8 2.37 2.37 0 0 1 8 7.083 2.37 2.37 0 0 1 6.125 8a2.37 2.37 0 0 1-1.875-.917A2.375 2.375 0 0 1 0 5.625V5.37a1.5 1.5 0 0 1 .361-.976l2.61-3.045zm1.78 4.275a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0 1.375 1.375 0 1 0 2.75 0V5.37a.5.5 0 0 0-.12-.325L12.27 2H3.73L1.12 5.045A.5.5 0 0 0 1 5.37v.255a1.375 1.375 0 0 0 2.75 0 .5.5 0 0 1 1 0zM1.5 8.5A.5.5 0 0 1 2 9v6h1v-5a1 1 0 0 1 1-1h3a1 1 0 0 1 1 1v5h6V9a.5.5 0 0 1 1 0v6h.5a.5.5 0 0 1 0 1H.5a.5.5 0 0 1 0-1H1V9a.5.5 0 0 1 .5-.5zM4 15h3v-5H4v5zm5-5a1 1 0 0 1 1-1h2a1 1 0 0 1 1 1v3a1 1 0 0 1-1 1h-2a1 1 0 0 1-1-1v-3zm3 0h-2v3h2v-3z" />
+                            </svg>Retail</h4>
+
+                        <div class="table-responsive">
+                            <table class="table mb-0">
+                                <tbody>
+                                    <tr class="font-16 text-dark" *ngFor="let item of [1,2,3,4,5,6]">
+                                        <td class="w-75">Citizens Bank</td>
+                                        <td>Bank</td>
+                                        <td>In Building</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 font-16 text-dark">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mb-0 border-bottom border-light border-2">
+                            <div class="col-6">
+                                <h4 class="font-20">ABOUT THE OWNER</h4>
+                            </div>
+                            <div class="col-6 text-end"><img src="assets/images/investments.png" alt="investments"
+                                    width="140px"></div>
+                        </div>
+                        <p class="mt-2">
+                            New York Life Real Estate
+                            Investors, headquartered in New York, is a full service, fully-integrated real estate
+                            enterprise comprised of over 155 professionals. Their division has market-leading
+                            capabilities and approximately 100 years of experience in real estate investing. Their team
+                            is located across five offices nationwide and manages investments in more than 40 states and
+                            150 markets, leveraging local expertise to effectively originate, underwrite and invest in
+                            real estate equity products and related debt, including direct equity investments,
+                            commercial mortgage loans, and commercial mortgage backed securities. Additionally, they are
+                            supported by the 170-year history and AA+ credit rating of the New York Life Insurance
+                            Company. This lends strength and stability to their operations and enables them to be a
+                            long-term partner their clients can count on. (<a
+                                href="www.newyorklifeinvestments.com">www.newyorklifeinvestments.com</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 font-16 text-dark">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row mb-0 border-bottom border-light border-2">
+                            <div class="col-6">
+                                <h4 class="font-20">ABOUT THE ARCHITECT</h4>
+                            </div>
+                            <div class="col-6 text-end"><img src="assets/images/smallwood.jpg" alt="investments"
+                                    width="140px"></div>
+                        </div>
+                        <p class="mt-2">
+                            Smallwood, Reynolds, Stewart, Stewart & Associates is an internationally established design
+                            firm providing innovative professional services for corporate, commercial, hospitality,
+                            residential, industrial, government and educational projects. The majority of services are
+                            commissioned by repeat clients in the real estate and development industry. Many
+                            longstanding relationships have been developed reflecting the ongoing commitment to quality
+                            design and responsive service.
+                            (<a href="www.srssa.com"> www.srssa.com</a>)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-3 col-6">
+                <p><strong>Listing ID:</strong> 4023891</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <p><strong>Date Created:</strong> 3/22/2023</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <p><strong>Last Updated:</strong> 3/22/2023</p>
+            </div>
+            <div class="col-md-3 col-6">
+                <p><strong>Address:</strong> 3475 Piedmont Rd NE, Atlanta, GA</p>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-12 col-lg-6 col-12">
+        <div class="card mt-lg-2 mt-lg-2 mt-0">
+            <div class="card-body">
+                <mat-tab-group fitInkBarToContent>
+                    <mat-tab label="Building">
+                        <div class="row">
+                            <h4 class="mt-4 text-dark border-bottom border-light border-2 pb-1 font-22 fw-bold">Address
+                            </h4>
+                            <div class="col-md-12 col-12 mt-2">
+                                <p class="font-16 text-dark">300 - 304 Main Street, Buffalo, NY 14202</p>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="row">
+                                    <div class="col-6 col-md-3">
+                                        <p class="font-12 mb-0">Date Added</p>
+                                        <p class="font-16 mt-0 text-dark">Feb 9, 2023</p>
+                                    </div>
+                                    <div class="col-6 col-md-3">
+                                        <p class="font-12 mb-0">Time Since Last Update</p>
+                                        <p class="font-16 mt-0 text-dark">16 days</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <h4 class="mt-3 text-dark border-bottom border-light border-2 pb-1 font-22 fw-bold">Building
+                                Details</h4>
+                            <div class="col-md-6 font-16">
+                                <div class="row">
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6 font-16">
+                                <div class="row">
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                    <div class="col-md-6 col-6">
+                                        <p>Property Type</p>
+                                    </div>
+                                    <div class="col-md-6 col-6 text-end">
+                                        <p class="text-dark">Office</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <h4 class="mt-3 text-dark border-bottom border-light border-2 pb-1 font-22 fw-bold">
+                                    Building
+                                    Description</h4>
+                                <div class="col-md-12">
+                                    <p class="font-16 text-dark my-2">9,000 Sf of Office Space in the Heart of Downtown
+                                        Buffalo.​ Fully Gross Plus Phone and Internet.​ Located Across From the Ellicott
+                                        Square Building.​ Close Proximity to Courts and County Offices.​ Offices Are
+                                        Furnished.​ 1st Floor Reception Area With Conference Room and Rest Rooms
+                                        Included.​ First Months Rent Free! 1-1200 Sf Office Space on First Floor, 2
+                                        Spaces With 250-3750sf One on Second Floor, One on Third Floor.​ 250sf to 3750sf
+                                        Available</p>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="font-16 text-dark">
+                                            <ul>
+                                                <li>24 Hour Access</li>
+                                                <li>Banking</li>
+                                                <li>Controlled Access</li>
+                                                <li>Dry Cleaner</li>
+                                                <li>Conferencing Facility</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="font-16 text-dark">
+                                            <ul>
+                                                <li>Fitness Center</li>
+                                                <li>Food Service</li>
+                                                <li>Metro/Subway</li>
+                                                <li>Property Manager on Site</li>
+                                                <li>Restaurant</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="font-16 text-dark">
+                                            <ul>
+                                                <li>Signage</li>
+                                                <li>Storage Space</li>
+                                                <li>Car Charging Station</li>
+                                                <li>Bicycle Storage</li>
+                                                <li>Direct Elevator Exposure</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <p class="font-22 fw-bold my-2 text-dark border-bottom border-light border-2 mt-2">
+                                    HIGHLIGHTS
+                                </p>
+                                <div class="col-md-6 font-16 text-dark">
+                                    <ul>
+                                        <li>Amazing location in the Buckhead District</li>
+                                        <li>Acess to train</li>
+                                        <li>Mixed use community with open air courtyard</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6 font-16 text-dark">
+                                    <ul>
+                                        <li>Amazing location in the Buckhead District</li>
+                                        <li>Acess to train</li>
+                                        <li>Mixed use community with open air courtyard</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-tab>
+                    <mat-tab label="Spaces">
+                        <p class="font-16 fw-bold text-dark mt-2">
+                            3 Spaces available (Multi-Tenant)
+                        </p>
+                        <mat-accordion>
+                            <mat-expansion-panel (opened)="panelOpenState = true" (closed)="panelOpenState = false">
+                                <mat-expansion-panel-header class="p-1">
+                                    <mat-panel-title>
+                                        Space / Unit
+                                    </mat-panel-title>
+                                </mat-expansion-panel-header>
+                                <!----1---->
+                                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)"
+                                    class="p-1 shadow-none mb-0">
+                                    <mat-expansion-panel-header class="p-1">
+                                        <mat-panel-title>
+                                            Available Space 1
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <div class="row">
+                                        <div class="col-12 p-2 pt-0">
+                                            <div class="responsive-table-plugin">
+                                                <div class="table-rep-plugin">
+                                                    <div class="table-responsive" data-pattern="priority-columns">
+                                                        <table id="tech-companies-1" class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-priority="2">Office</th>
+                                                                    <th data-priority="3">3750SF</th>
+                                                                    <th data-priority="4">$15/SF/YR</th>
+                                                                    <th data-priority="5">Brochure</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>597.74</td>
+                                                                    <td>12:12PM</td>
+                                                                    <td>14.81</td>
+                                                                    <td><button class="btn btn-dark">View</button></td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-16 text-dark">Individual and/or multiple full service
+                                                    offices available in Downtown Buffalo directly across from the
+                                                    Ellicott Square Building. Lease rates range from $500-$700 per
+                                                    office including utilities, internet, phone, and 24 hour access
+                                                    code. Amenities include 1st floor conference room and reception area
+                                                    for clients. Just steps away from many restaurants and
+                                                    entertainment. This property has access to multi-modal transit
+                                                    options and is highly walk-able!</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-6">
+                                                    <p>Listing Type</p>
+                                                    <p>Space Subtype</p>
+                                                    <p>RSF</p>
+                                                    <p>USF</p>
+                                                    <p>Rate (Per SF)</p>
+                                                    <p>Lease Type</p>
+                                                    <p>Days on Market</p>
+                                                </div>
+                                                <div class="col-md-6 col-6 text-end">
+                                                    <p>Direct</p>
+                                                    <p>Executive Office</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>$15/SF/YR</p>
+                                                    <p>Full Service</p>
+                                                    <p>99 Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </mat-expansion-panel>
+                                <!----2---->
+                                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)"
+                                    class="p-1 shadow-none mb-0">
+                                    <mat-expansion-panel-header class="p-1">
+                                        <mat-panel-title>
+                                            Available Space 2
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <div class="row">
+                                        <div class="col-12 p-2 pt-0">
+                                            <div class="responsive-table-plugin">
+                                                <div class="table-rep-plugin">
+                                                    <div class="table-responsive" data-pattern="priority-columns">
+                                                        <table id="tech-companies-1" class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-priority="2">Office</th>
+                                                                    <th data-priority="3">3750SF</th>
+                                                                    <th data-priority="4">$15/SF/YR</th>
+                                                                    <th data-priority="5">Brochure</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>597.74</td>
+                                                                    <td>12:12PM</td>
+                                                                    <td>14.81</td>
+                                                                    <td><button class="btn btn-dark">View</button></td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-16 text-dark">Individual and/or multiple full service
+                                                    offices available in Downtown Buffalo directly across from the
+                                                    Ellicott Square Building. Lease rates range from $500-$700 per
+                                                    office including utilities, internet, phone, and 24 hour access
+                                                    code. Amenities include 1st floor conference room and reception area
+                                                    for clients. Just steps away from many restaurants and
+                                                    entertainment. This property has access to multi-modal transit
+                                                    options and is highly walk-able!</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-6">
+                                                    <p>Listing Type</p>
+                                                    <p>Space Subtype</p>
+                                                    <p>RSF</p>
+                                                    <p>USF</p>
+                                                    <p>Rate (Per SF)</p>
+                                                    <p>Lease Type</p>
+                                                    <p>Days on Market</p>
+                                                </div>
+                                                <div class="col-md-6 col-6 text-end">
+                                                    <p>Direct</p>
+                                                    <p>Executive Office</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>$15/SF/YR</p>
+                                                    <p>Full Service</p>
+                                                    <p>99 Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </mat-expansion-panel>
+                                <!----3---->
+                                <mat-expansion-panel [expanded]="step === 0" (opened)="setStep(0)"
+                                    class="p-1 shadow-none mb-0">
+                                    <mat-expansion-panel-header class="p-1">
+                                        <mat-panel-title>
+                                            Available Space 3
+                                        </mat-panel-title>
+                                    </mat-expansion-panel-header>
+                                    <div class="row">
+                                        <div class="col-12 p-2 pt-0">
+                                            <div class="responsive-table-plugin">
+                                                <div class="table-rep-plugin">
+                                                    <div class="table-responsive" data-pattern="priority-columns">
+                                                        <table id="tech-companies-1" class="table table-striped">
+                                                            <thead>
+                                                                <tr>
+                                                                    <th data-priority="2">Office</th>
+                                                                    <th data-priority="3">3750SF</th>
+                                                                    <th data-priority="4">$15/SF/YR</th>
+                                                                    <th data-priority="5">Brochure</th>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>597.74</td>
+                                                                    <td>12:12PM</td>
+                                                                    <td>14.81</td>
+                                                                    <td><button class="btn btn-dark">View</button></td>
+
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-md-12">
+                                                <p class="font-16 text-dark">Individual and/or multiple full service
+                                                    offices available in Downtown Buffalo directly across from the
+                                                    Ellicott Square Building. Lease rates range from $500-$700 per
+                                                    office including utilities, internet, phone, and 24 hour access
+                                                    code. Amenities include 1st floor conference room and reception area
+                                                    for clients. Just steps away from many restaurants and
+                                                    entertainment. This property has access to multi-modal transit
+                                                    options and is highly walk-able!</p>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-md-6 col-6">
+                                                    <p>Listing Type</p>
+                                                    <p>Space Subtype</p>
+                                                    <p>RSF</p>
+                                                    <p>USF</p>
+                                                    <p>Rate (Per SF)</p>
+                                                    <p>Lease Type</p>
+                                                    <p>Days on Market</p>
+                                                </div>
+                                                <div class="col-md-6 col-6 text-end">
+                                                    <p>Direct</p>
+                                                    <p>Executive Office</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>9,000 SF</p>
+                                                    <p>$15/SF/YR</p>
+                                                    <p>Full Service</p>
+                                                    <p>99 Days</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </mat-expansion-panel>
+                            </mat-expansion-panel>
+                        </mat-accordion>
+                    </mat-tab>
+                </mat-tab-group>
+            </div>
+        </div>
+    </div>
+</div>
+<app-loading></app-loading>

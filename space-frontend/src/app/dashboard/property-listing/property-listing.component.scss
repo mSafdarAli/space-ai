@@ -1,0 +1,16 @@
+// .hr {
+//     border: 1px solid #d8d8d8;
+//     border-radius: 50px;
+// }
+
+::ng-deep .mat-expansion-panel-body {
+    padding: 0px !important;
+}
+::ng-deep .mat-tab-label {
+    justify-content: start !important;
+    padding: 3px !important;    
+}
+li::marker {
+    color: rgb(71, 45, 75) !important;
+    font-size: 25px !important;
+}

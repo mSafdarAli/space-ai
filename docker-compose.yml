@@ -1,0 +1,51 @@
+version: "3.8"
+services:
+  reverse_proxy:
+    image: nginx:1.17.10
+    container_name: reverse_proxy
+    depends_on:
+      - space-frontend
+      - space-api
+      - database
+    volumes:
+      - ./reverse_proxy/nginx.conf:/etc/nginx/nginx.conf  
+    ports:
+      - 80:80
+    networks:
+      - node-network  
+  space-frontend:
+    container_name: space-frontend
+    image: space-frontend
+    build: 
+      context: ./space-frontend
+    networks:
+      - node-network  
+  space-api:
+    container_name: space-api
+    hostname: space-api
+    image: space-api
+    build: 
+      context: ./space-api
+    environment:
+      MONGO_INITDB_DATABASE: spaceLocator 
+      MONGODB_URI: mongodb://db:27017
+    depends_on:
+      - database
+    volumes:
+      - ./db-data/mongo/:/data/database
+    networks:
+      - node-network
+  database:
+    container_name: db
+    image: mongo
+    restart: on-failure
+    volumes:
+      - ./mongodb:/data/database
+    networks:
+      - node-network  
+volumes:
+  dbdata6:
+networks:
+  node-network:
+    external: true
+    driver: bridge  

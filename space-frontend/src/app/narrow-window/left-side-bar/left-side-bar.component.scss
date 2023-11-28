@@ -1,0 +1,38 @@
+.bg-sidemenu {
+    background: #000;
+    border-radius: 0px 25px 25px 0px;
+}
+#side-menu li a {
+    color: white;
+}
+span.menu-arrow {
+    transition: rotate ease-in-out 0.2s;
+}
+span.menu-arrow.open {
+    rotate: 90deg;
+}
+.cursor {
+    cursor: pointer;
+}
+
+#side-menu li {
+    display: block;
+    padding: 2px 4px 2px 4px;
+    a {
+        color: rgb(255, 255, 255);
+        display: block;
+        padding: 8px 0px 8px 8px;
+        transition: all 0.2s;
+        i {
+            padding-right: 1rem;
+        }
+        &.active,
+        &:hover,
+        &:active,
+        &:focus {
+            background-color: white;
+            border-radius: 0px 3rem 3rem 0px;
+            color: #000;
+        }
+    }
+}

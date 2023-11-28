@@ -1,0 +1,12 @@
+staging:
+  stage: deploy
+  script:
+    - echo "====== Deploy to Dev server ======"
+    # Add target server`s secret key
+    - mkdir ~/.ssh
+    - echo -e "$KEY" > ~/.ssh/id_rsa
+    - chmod 700 ~/.ssh && chmod 600 ~/.ssh/*
+    - echo "Test ssh connection"
+    - ssh -o StrictHostKeyChecking=no -tt -p2202 root@$SERVER_IP "./git.sh && exit"
+    # Delploy
+    - echo "Completed"

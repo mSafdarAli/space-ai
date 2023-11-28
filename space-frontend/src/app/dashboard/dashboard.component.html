@@ -1,0 +1,48 @@
+<div class="card mt-2">
+    <div class="card-body">
+        <form [formGroup]="form">
+            <div class="row">
+                <div class="col-md-3 col-lg-4 col-12">
+                    <h4 class="font-22">Properties</h4>
+                </div>
+                <div class="col-md-3 col-lg-2 col-12">
+                    <div>
+                        <lb-auto-complete appearance="outline" placeholder="For Lease" [multiple]="true" [clear]="true"
+                            [fControl]="form.controls['lease']" [options]="selectLease">
+                        </lb-auto-complete>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-2 col-12">
+                    <div>
+                        <lb-auto-complete appearance="outline" placeholder="Auctions" [multiple]="true" [clear]="true"
+                            [fControl]="form.controls['auctions']" [options]="selectAuctions">
+                        </lb-auto-complete>
+                    </div>
+                </div>
+                <div class="col-md-3 col-lg-4 col-12">
+                    <div class="input-group top">
+                        <input type="text" class="form-control rounded"
+                            placeholder="Enter Location, Broker/Agent, or Description">
+                        <div class="input-group-append">
+                            <button class="btn button border-1 border text-white rounded" type="button">
+                                <i class="fa fa-search"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<div class="row">
+    <div class="col-md-6 col-lg-3 col-12" *ngFor="let item of data">
+        <div class="card">
+            <img src={{item.image}} class="card-img-top" alt="Land" width="391px" height="220px">
+            <div class="card-body">
+                <h5 class="card-title">{{item.title}}</h5>
+                <p class="card-text height">{{item.excerpt}}</p>
+                <a href="#" class="btn button text-white" routerLink="/{{item._id}}">Buy the Property</a>
+            </div>
+        </div>
+    </div>
+</div>
